@@ -11,29 +11,14 @@
 ## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
 node_modules
 
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Test binary, build with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
 # package-lock.json
 package-lock.json
 
 ## Dependency directory
-docs/node_modules
-docs/public
+docs/
 
 ## Dependency directory
-example/node_modules
-example/public
+example/
 
 ### macOS ###
 # General
