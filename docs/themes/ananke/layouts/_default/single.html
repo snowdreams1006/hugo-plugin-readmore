@@ -40,7 +40,9 @@
     </header>
 
     <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-      {{- .Content -}}
+        <div id="vip-container">
+          {{- .Content -}}
+        </div> 
       {{- partial "tags.html" . -}}
       <div class="mt6">
       {{ if .Site.DisqusShortname }}
@@ -57,4 +59,19 @@
     </aside>
 
   </article>
+
+  <script src="https://my.openwrite.cn/js/readmore.js" type="text/javascript"></script>
+<script>
+var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);
+if (!isMobile) {
+    var btw = new BTWPlugin();
+    btw.init({
+        "id": "vip-container",
+        "blogId": "{{ .Site.Params.plugins.readmore.blogId }}",
+        "name": "{{ .Site.Params.plugins.readmore.name }}",
+        "qrcode": "{{ .Site.Params.plugins.readmore.qrcode }}",
+        "keyword": "{{ .Site.Params.plugins.readmore.keyword }}"
+    });
+}
+</script>
 {{ end }}
