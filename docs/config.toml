@@ -2,3 +2,6 @@ baseURL = "https://snowdreams1006.github.io/hugo-plugin-readmore/"
 languageCode = "zh-cn"
 title = "hugo-plugin-readmore"
 theme = "ananke"
+
+[params]
+    blogId = "15702-1569305559839-744"
